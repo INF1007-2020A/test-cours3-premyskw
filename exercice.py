@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def capitaliser_pays(nom):
-    nom.lower()
+    nom = nom.lower()
+    nom = nom.split()
     
     return nom
 
