@@ -1,22 +1,7 @@
-test_capitalize_first_letter (__main__.TestExercice) ... FAIL
+test_capitalize_first_letter (__main__.TestExercice) ... ok
 test_linking_words (__main__.TestExercice) ... FAIL
 test_lower_case_names (__main__.TestExercice) ... FAIL
 test_upper_case_names (__main__.TestExercice) ... FAIL
-
-======================================================================
-FAIL: test_capitalize_first_letter (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 30, in test_capitalize_first_letter
-    'Mettre la permiere lettre en majuscule'
-AssertionError: Lists differ: ['angola', 'the', 'andorra', 'antigua', 'georgia'] != ['A', 'T', 'A', 'A', 'G']
-
-First differing element 0:
-'angola'
-'A'
-
-- ['angola', 'the', 'andorra', 'antigua', 'georgia']
-+ ['A', 'T', 'A', 'A', 'G'] : Mettre la permiere lettre en majuscule
 
 ======================================================================
 FAIL: test_linking_words (__main__.TestExercice)
@@ -24,14 +9,18 @@ FAIL: test_linking_words (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 64, in test_linking_words
     'Les mots de liaison doivent etre en minuscule'
-AssertionError: Lists differ: [['antigua', 'and', 'barbuda'], ['bosnia', 'and', 'herzegovina']] != ['Antigua and Barbuda', 'Bosnia and Herzegovina']
+AssertionError: Lists differ: ['Antigua And Barbuda', 'Bosnia And Herzegovina'] != ['Antigua and Barbuda', 'Bosnia and Herzegovina']
 
 First differing element 0:
-['antigua', 'and', 'barbuda']
+'Antigua And Barbuda'
 'Antigua and Barbuda'
 
-- [['antigua', 'and', 'barbuda'], ['bosnia', 'and', 'herzegovina']]
-+ ['Antigua and Barbuda', 'Bosnia and Herzegovina'] : Les mots de liaison doivent etre en minuscule
+- ['Antigua And Barbuda', 'Bosnia And Herzegovina']
+?           ^                     ^
+
++ ['Antigua and Barbuda', 'Bosnia and Herzegovina']
+?           ^                     ^
+ : Les mots de liaison doivent etre en minuscule
 
 ======================================================================
 FAIL: test_lower_case_names (__main__.TestExercice)
@@ -39,13 +28,13 @@ FAIL: test_lower_case_names (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 39, in test_lower_case_names
     'Certaines lettres ne doivent pas etre en minuscules'
-AssertionError: Lists differ: [['afghanistan'], ['albania'], ['algeria'][777 chars]na']] != ['Afghanistan', 'Albania', 'Algeria', 'And[634 chars]ana']
+AssertionError: Lists differ: ['Afg[58 chars]igua And Barbuda', 'Argentina', 'Armenia', 'Au[567 chars]ana'] != ['Afg[58 chars]igua and Barbuda', 'Argentina', 'Armenia', 'Au[567 chars]ana']
 
-First differing element 0:
-['afghanistan']
-'Afghanistan'
+First differing element 5:
+'Antigua And Barbuda'
+'Antigua and Barbuda'
 
-Diff is 3004 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en minuscules
+Diff is 1007 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en minuscules
 
 ======================================================================
 FAIL: test_upper_case_names (__main__.TestExercice)
@@ -53,15 +42,15 @@ FAIL: test_upper_case_names (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 48, in test_upper_case_names
     'Certaines lettres ne doivent pas etre en majuscule'
-AssertionError: Lists differ: [['afghanistan'], ['albania'], ['algeria'][777 chars]na']] != ['Afghanistan', 'Albania', 'Algeria', 'And[634 chars]ana']
+AssertionError: Lists differ: ['Afg[58 chars]igua And Barbuda', 'Argentina', 'Armenia', 'Au[567 chars]ana'] != ['Afg[58 chars]igua and Barbuda', 'Argentina', 'Armenia', 'Au[567 chars]ana']
 
-First differing element 0:
-['afghanistan']
-'Afghanistan'
+First differing element 5:
+'Antigua And Barbuda'
+'Antigua and Barbuda'
 
-Diff is 3004 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en majuscule
+Diff is 1007 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en majuscule
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.121s
+Ran 4 tests in 0.002s
 
-FAILED (failures=4)
+FAILED (failures=3)
