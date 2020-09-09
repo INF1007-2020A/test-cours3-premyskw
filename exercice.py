@@ -4,7 +4,7 @@ import string
 def capitaliser_pays(nom):
     nom = nom.lower()
     nom = string.capwords(nom)
-    
+    nom = 
     return nom
 
 
