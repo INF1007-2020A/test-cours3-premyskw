@@ -4,7 +4,7 @@
 def majuscule(mot):
     resultat = ''
     for char in mot:
-        if ord(chat) >=65:
+        if ord(char) >=65:
             resultat += chr(ord(char)-32)
     return resultat
 
