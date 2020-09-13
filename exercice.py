@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-def majuscule(mot):
-    # TODO completer la fonction
-    return mot
 
+def majuscule(mot):
+    resultat = ''
+    for char in mot:
+        if ord(chat) >=65:
+            resultat += chr(ord(char)-32)
+    return resultat
 
 if __name__ == '__main__':
     mots = [
