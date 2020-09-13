@@ -2,11 +2,12 @@
 
 
 
+
 ## Résultats
 Score | Critères
 --- | ---
-0/1 | Formater des mots en majuscules
-0/1 | **Total**
+1/1 | Formater des mots en majuscules
+1/1 | **Total**
 
 [Voir détails](./logs/tests_results.txt) | [Rafraîchir](../../)
 # Transformer une lettre minuscule en majuscule
